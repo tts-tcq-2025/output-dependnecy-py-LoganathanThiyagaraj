@@ -22,7 +22,8 @@ def print_color_map():
 result = print_color_map()
 assert(result == 25)
 actual_map_strings = get_color_map_strings()
-assert(actual_map_strings[9] == "10 | Red    | Slate") # This will fail if get_color_map_strings()[9] is "10 | Red | Slate"
+assert(actual_map_strings[9] == "10 | Red | Slate") # This will fail if get_color_map_strings()[9] is "10 | Red | Slate"
 
 print("All is well (maybe!)")
+
 
