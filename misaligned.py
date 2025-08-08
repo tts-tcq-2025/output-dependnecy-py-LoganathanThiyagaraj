@@ -6,7 +6,7 @@ def get_color_map_strings():
     map_strings = []
     for i, major in enumerate(major_colors):
         for j, minor in enumerate(minor_colors):
-            pair_number = i * 5 + j + 1
+            pair_number = i * 5 + j 
             # This is the line from the original code that causes the misalignment
             map_strings.append(f'{pair_number} | {major} | {minor}')
     return map_strings
@@ -25,5 +25,6 @@ actual_map_strings = get_color_map_strings()
 assert(actual_map_strings[9] == "10 | Red | Slate") # This will fail if get_color_map_strings()[9] is "10 | Red | Slate"
 
 print("All is well (maybe!)")
+
 
 
